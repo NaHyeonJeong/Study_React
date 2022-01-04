@@ -1,6 +1,10 @@
 import React from "react";
 import './TodoListTemplate.css';
-
+/**
+ * 전체 틀 component
+ * @param {*} param0 
+ * @returns 
+ */
 const TodoListTemplate = ({form, children}) => {
     return (
         <main className="todo-list-template">
