@@ -37,6 +37,7 @@ class IterationPractice extends Component{
         const {names} = this.state;
         this.setState({
             //filter를 통해 index번째(삭제 원하는 위치)를 제외한 원소만 있는 *새 배열 생성*
+            //즉, 삭제 원하는 데이터의 인덱스는 건너 뛰고 진행함
             names: names.filter((item, i) => i !== index)
         });
     }
@@ -46,6 +47,7 @@ class IterationPractice extends Component{
         //     ['Angular', 'React', 'Vue', 'Ember'];
         const nameList = this.state.names.map(
             (name, index) => ( //item 더블 클릭하면 값 제거
+                //이번 이벤트 처리는 인자(인덱스 값)가 필요하기 때문에 arrow 형식으로 구현
                 <li key={index} onDoubleClick={() => this.handleRemove(index)}>
                     {name}
                 </li>)

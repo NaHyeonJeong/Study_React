@@ -1,3 +1,27 @@
+//Hook 연습
+import React, {useState} from 'react';
+import HookPractice2 from './practice_hook/HookPractice2';
+
+const App = () => {
+  const[visible, setVisible] = useState(false);
+
+  return (
+    <div>
+      <button onClick={() => {
+        setVisible(!visible);
+      }}>
+        {visible ? '숨기기' : '보이기'}
+      </button>
+      <hr/>
+      {visible && <HookPractice2/>}
+    </div>
+  ) ;
+  // return <HookPractice3/>;
+};
+
+export default App;
+
+
 // //컴포넌트 반복 : map()
 // //특정값 삭제
 // import React, { Component } from 'react';
@@ -12,18 +36,18 @@
 // }
 // export default App;
 
-//react에서 Dom 접근하기
-import React, { Component } from 'react';
-import ValidationPractice from './component/ValidationPractice';
-import './component/ValidationPractice.css';
-class App extends Component {
-  render() {
-    return (
-      <ValidationPractice />
-    );
-  }
-}
-export default App;
+// //react에서 Dom 접근하기
+// import React, { Component } from 'react';
+// import ValidationPractice from './component/ValidationPractice';
+// import './component/ValidationPractice.css';
+// class App extends Component {
+//   render() {
+//     return (
+//       <ValidationPractice />
+//     );
+//   }
+// }
+// export default App;
 
 
 // //Event
@@ -80,30 +104,4 @@ export default App;
 //     );
 //   }
 // }
-// export default App;
-
-// import logo from './logo.svg';
-// import './App.css';
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.js</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
-
 // export default App;
