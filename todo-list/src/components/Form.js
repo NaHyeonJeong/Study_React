@@ -3,6 +3,7 @@ import './Form.css'
 /**
  * input과 button을 포함하는 component
  */
+//이거는 함수형
 const Form = ({value, onChange, onCreate, onKeyPress}) => {
     //value: input의 내용
     //onChange: input 내용이 변경될 때 실행되는 함수
@@ -20,6 +21,7 @@ const Form = ({value, onChange, onCreate, onKeyPress}) => {
 export default Form;
 
 
+//이거는 클래스형
 // import React, { Component } from 'react';
 // import './Form.css'
 // class Form extends Component {
