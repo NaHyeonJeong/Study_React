@@ -1,4 +1,4 @@
-import {StringValidator} from "./Validation";
+import {StringValidator} from "./Validation"; //인터페이스
 /**
  * Created by vega on 2017-05-29.
  */

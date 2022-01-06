@@ -20,6 +20,8 @@ class Student {
 var user = new Student("Jane", "M.", "User");
 
 console.log(user.firstName + ':' + user.middleInitial + ':' + user.lastName);
+//getter method call
 console.log(user.fullName);
+//setter method call
 user.fullName = 'john resig';
 console.log(user.fullName);

@@ -2,7 +2,7 @@
  * Created by vega on 2017-03-07.
  * tsc --target es5  tsfilename
  */
-var Student = (function () {
+var Student = /** @class */ (function () {
     function Student(firstName, middleInitial, lastName) {
         this.firstName = firstName;
         this.middleInitial = middleInitial;
@@ -16,7 +16,7 @@ var Student = (function () {
         set: function (newName) {
             this._fullName = newName;
         },
-        enumerable: true,
+        enumerable: false,
         configurable: true
     });
     return Student;

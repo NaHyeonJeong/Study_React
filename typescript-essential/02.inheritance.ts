@@ -1,5 +1,8 @@
 /**
  * Created by vega on 2017-05-29.
+ * 
+ * tsc --target es5 02.inheritance.ts
+ * node 02.inheritance.js
  */
 class Animal {
     name: string;
@@ -29,6 +32,8 @@ class Employee {
     private name: string;
     constructor(theName: string) { this.name = theName; }
 }
+
+///////////////////////////////////////////////////////
 
 let sam = new Snake("Sammy the Python");
 let tom: Animal = new Horse("Tommy the Palomino");
