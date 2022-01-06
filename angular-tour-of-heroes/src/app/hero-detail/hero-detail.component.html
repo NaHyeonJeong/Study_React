@@ -1,0 +1,10 @@
+<div *ngIf="hero"><!--click을 해야지만 heroes.component.ts에서 name을 받아올 수 있음-->
+  <h2>{{ hero.name | uppercase }} Details</h2>
+  <div>
+    <span>id: </span>{{hero.id}}
+  </div>
+  <div>
+    <label for="hero-name">Hero name: </label>
+    <input id="hero-name" [(ngModel)]="hero.name" placeholder="name">
+  </div>
+</div>

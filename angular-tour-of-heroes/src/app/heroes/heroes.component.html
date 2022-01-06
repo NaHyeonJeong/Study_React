@@ -1,0 +1,12 @@
+<!-- <h1>{{hero}}</h1> -->
+<h2>마이 히어로즈</h2>
+<ul class="heroes">
+  <!-- <li *ngFor="let hero of heroes; index as i">영웅 번호를 index로 줄 수 있음 -->
+  <li *ngFor="let hero of heroes" [class.selected]="hero === selectedHero" (click)="onSelect(hero)">
+    <span class="badge">{{hero.id}}</span>
+    {{hero.name}}
+  </li>
+</ul>
+
+<!--component를 넣어줌-->
+<app-hero-detail [hero]="selectedHero"></app-hero-detail>
