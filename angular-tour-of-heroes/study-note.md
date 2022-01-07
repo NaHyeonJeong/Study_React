@@ -81,3 +81,15 @@ Component들에서 공통적으로 사용하는 것들을 Injector에 Service를
 Angular는 Service를 Component에게 제공하기 위해 **DI(dependency Injection)** 사용
 > Dependency Injection은 의존관계에 있는 다른 객체에게 새로운 객체를 제공하기 위한 방법
 
+## RxJS의 of()
+Server로 부터 데이터를 가져오는 것 처럼 simulate 하는 함수
+## RxJS의 subscibe()
+of() 함수에서 emit한 데이터를 **구독**하는 함수
+
+# Modules
+모든 angular app은 1개의 NgModule(root module)을 가짐   
+Module은 @NgModule Decorator를 선언
+## routing module
+```bash
+ng g module app-routing --flat --module=app
+```
